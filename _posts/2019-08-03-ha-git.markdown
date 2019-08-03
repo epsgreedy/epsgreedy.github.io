@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Git-based Config for Home Assistant"
+date:   2019-08-03 09:13:22 +0200
+categories: home-assistant
+---
+Test
