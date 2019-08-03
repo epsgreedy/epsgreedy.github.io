@@ -4,4 +4,19 @@ title:  "Git-based Config for Home Assistant"
 date:   2019-08-03 09:13:22 +0200
 categories: home-assistant
 ---
-Test
+
+I have been looking for a fast way to make changes to my Home-Assistant (HA) configuration. Previously I used to SSH to the machine running HA and used a text-editor to make changes. My configuration files are stores in a git repository, so after I made a change, I needed to push my changes to the remote git-repository.
+
+This is offcourse far from ideal because SSHing and finding the correct folder always takes some time.
+
+That is why I decides to switch things around, and instead of editing the config-file, and additionally committing my changes to the git-repository. I decided to make changes to the config files through the git-repository, and afterwards pull them from inside HA.
+
+To facilitate this I made two shell services:
+
+```
+shell_command:
+  config_pull: "cd /home/ha/.homeassistant && git pull" 
+  config_push: "cd /homa/ha/.homeassistant && git pull && git add . && git commit -m 'update' && git push"
+```
+
+The config_pull script is used to update the configuration, and I use this inside a script that also restarts HA. The config_push script is used to commit changes made to the configuration from inside the UI (scripts, automations, ...).
