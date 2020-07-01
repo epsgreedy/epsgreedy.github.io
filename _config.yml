@@ -20,6 +20,11 @@ url: "https://epsgreedy.be" # the base hostname & protocol for your site, e.g. h
 twitter_username: m_htsbt
 github_username:  mhtsbt
 
+jekyll_analytics:
+  GoogleAnalytics:
+    id: UA-171410922-1
+    anonymizeIp: true
+
 # Build settings
 markdown: kramdown
 theme: minima
@@ -27,10 +32,7 @@ plugins:
   - jekyll-feed
   - jekyll-analytics
 
-jekyll_analytics:
-  GoogleAnalytics:
-    id: UA-171410922-1
-    anonymizeIp: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
