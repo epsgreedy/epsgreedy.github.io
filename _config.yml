@@ -19,11 +19,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://epsgreedy.be" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: m_htsbt
 github_username:  mhtsbt
-
-jekyll_analytics:
-  GoogleAnalytics:
-    id: UA-171410922-1
-    anonymizeIp: true
+google_analytics: UA-171410922-1
 
 # Build settings
 markdown: kramdown
