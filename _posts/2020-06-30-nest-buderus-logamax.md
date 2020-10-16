@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nest thermostat installation with a Bulerus Logamax Plus boiler"
+title: "Nest thermostat installation with a Buderus Logamax Plus boiler"
 date: 2020-06-30 19:28:00 +0200
 categories: home-automation
 ---
